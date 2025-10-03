@@ -1,0 +1,25 @@
+mkdir materia
+cd materia 
+ls
+touch estudiante.txt
+vi estudiante.txt
+
+#! Agregamos nuestro nombre y matricula
+
+chmod 700 estudiante.txt
+chmod 770 estudiante.txt
+ls -l
+cd /home/josejerez/Desktop
+mkdir materia2
+
+cp materia/estudiante.txt materia2/
+cd materia2
+ls
+cat estudiante.txt
+clear
+cd /home/josejerez/Desktop
+rm -rf materia
+rm -rf materia2
+ls
+time
+date
