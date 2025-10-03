@@ -1,0 +1,38 @@
+ncmli
+
+ip a
+
+
+#! para poner una ip temporal
+
+ip link set down ens160
+
+clear
+
+ip a add 192.168.15.10/24 dev ens160
+
+ip a
+
+reboot
+
+#! poner una ip temporalmente
+
+nmcli connectio edit ens160
+
+print ipv4
+
+set ipv4.method manual
+
+print ipv4
+
+#! Volvemos a windows y revisamos el rango de nuestra ip
+
+ipconfig /all
+
+#! Y luego de checar volvemos a fedora
+
+set ipv4.add 192.168.75.250/24
+
+set ipv4.gateway 192.168.75.180
+
+set ipv4.dns 8.8.8.8,8.8.4.4
