@@ -1,0 +1,23 @@
+useradd josej
+
+usermod -aG wheel josej
+
+cat /etc/passwd
+
+clear
+
+groupadd guest
+
+useradd jose2
+
+usermod -aG guest jose2
+
+cat /etc/group
+
+userdel josej
+
+userdel jose2
+
+groupdel guest
+
+cat /etc/group
