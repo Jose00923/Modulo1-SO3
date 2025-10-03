@@ -17,7 +17,7 @@ reboot
 
 #! poner una ip temporalmente
 
-nmcli connectio edit ens160
+nmcli connection edit "Wired Connection 1"
 
 print ipv4
 
@@ -34,5 +34,6 @@ ipconfig /all
 set ipv4.add 192.168.75.250/24
 
 set ipv4.gateway 192.168.75.180
+
 
 set ipv4.dns 8.8.8.8,8.8.4.4
